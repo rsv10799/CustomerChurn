@@ -100,16 +100,6 @@ streamlit run churn_app.py
 
 ---
 
-## 🌎 Deployment
-
-### **Deploy on Streamlit Cloud**
-
-1. Push the project to **GitHub**
-2. Go to [Streamlit Cloud](https://share.streamlit.io/)
-3. Deploy by linking your repository
-
----
-
 ## 📌 Example User Inputs & Output
 
 ### **User Inputs**
@@ -132,7 +122,7 @@ Churn Prediction: No (Customer is likely to stay)
 
 ## 🏆 Results & Key Insights
 
-- **Random Forest** performed the best with \~85% accuracy.
+- **Random Forest** performed the best with \~95% accuracy.
 - **Customer Service Calls** and **Total Day Minutes** are strong indicators of churn.
 - Customers with **higher customer service calls** are more likely to churn.
 
