@@ -1,9 +1,14 @@
 # CustomerChurn
-# Churn Prediction Model & Streamlit App
+# 🔮Churn Prediction Model & Streamlit App
 
-## 📌 Project Overview
+Welcome to the **Customer Churn Prediction App**! This **machine learning web app** predicts whether a customer is likely to churn based on their account details and usage patterns. Built using **Streamlit**, it provides a simple and interactive interface for predictions.
 
-This project builds a **Customer Churn Prediction Model** using multiple machine learning algorithms and deploys it as a **Streamlit web application**. The app allows users to input customer details and predict the likelihood of churn.
+## 🚀 Features
+✅ **Easy-to-use UI** – Enter details, click **Predict**, and get instant results.  
+✅ **Powered by Machine Learning** – Uses a **Random Forest model** trained on telecom customer data.  
+✅ **Fast & Lightweight** – Runs locally in your browser with minimal setup.  
+✅ **Scalable & Customizable** – Modify the model or add new features easily.  
+
 
 ---
 
@@ -40,43 +45,6 @@ The goal is to predict **Churn** (1 = Churn, 0 = No Churn) based on the above fe
 6. **Deployment** – Running the app locally or deploying it to a cloud platform like **Streamlit Cloud, Heroku, or AWS**.
 
 ---
-
-## 🔧 Installation & Setup
-
-### **1️⃣ Clone the Repository**
-
-```sh
-git clone https://github.com/your-username/churn-prediction-streamlit.git
-cd churn-prediction-streamlit
-```
-
-### **2️⃣ Create Virtual Environment & Install Dependencies**
-
-```sh
-# Create virtual environment
-python -m venv venv
-
-# Activate virtual environment
-# Windows
-venv\Scripts\activate
-
-# Mac/Linux
-source venv/bin/activate
-
-# Install required packages
-pip install -r requirements.txt
-```
-
-### **3️⃣ Run the Streamlit App**
-
-```sh
-streamlit run churn_app.py
-```
-
-This will start the web app locally. Open the displayed URL in your browser.
-
----
-
 ## 📊 Exploratory Data Analysis (EDA)
 
 The EDA process includes:
@@ -111,35 +79,6 @@ We train the following models and compare their performance:
 - **Random Forest**
 - **Gradient Boosting**
 - **Neural Network (MLP)**
-
-### **Model Training & Evaluation**
-
-```python
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, classification_report
-
-# Train Random Forest
-model = RandomForestClassifier(n_estimators=100, random_state=42)
-model.fit(X_train_scaled, y_train)
-
-# Predict on validation data
-y_pred = model.predict(X_val_scaled)
-
-# Evaluate model
-print("Accuracy:", accuracy_score(y_val, y_pred))
-print(classification_report(y_val, y_pred))
-```
-
-### **Saving the Best Model**
-
-```python
-import pickle
-
-with open("random_forest_model.pkl", "wb") as file:
-    pickle.dump(model, file)
-with open("scaler.pkl", "wb") as file:
-    pickle.dump(scaler, file)
-```
 
 ---
 
