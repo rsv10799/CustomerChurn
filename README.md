@@ -218,8 +218,3 @@ This project is **MIT licensed**. Feel free to use and modify it.
 Want to improve this project? Fork it and submit a pull request! 🚀
 
 ---
-
-## 📬 Contact
-
-For any queries, contact me at [**your-email@example.com**](mailto\:your-email@example.com) or reach out via **GitHub Issues**.
-
